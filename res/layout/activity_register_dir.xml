@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        	    android:id="@+id/fl_conversation"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="match_parent"        	    
+        	    android:orientation="vertical">
+        <!-- TextView Tittle Activity -->	    
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro Diretório"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="center"/>
+        
+        <!-- TextView Name -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"/>        
+        <!-- EditText Name -->
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"/>
+        
+        <!-- TextView Host -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP ou Host:"/>
+        <!-- EditText Name -->
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etIpHost"/>
+        
+        <!-- TextView Port -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Porta:"/>
+        <!-- EditText Name -->
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPort"
+            android:inputType="number"/>
+                
+        <!-- TextView User -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuário:"/>
+        <!-- EditText Name -->
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etUser"/>
+        
+        <!-- TextView Password: -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha"/>
+        <!-- EditText Name -->
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPass"/>
+        
+        <!-- TextView Dir: -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diretório FTP"/>
+        <!-- EditText Dir -->
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDirInFTP"/>
+        
+        <!-- TextView Local: -->
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diretório Local"/>
+        <!-- EditText Local -->
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDirLocal"/>
+        
+        <!-- Button cadastrar: -->
+        <Button 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:onClick="evtRegister"/>
+   </LinearLayout>
+</RelativeLayout>
